@@ -4,13 +4,13 @@
   Insert Node at a given position in a linked list 
   The linked list will not be empty and position will always be valid
   First element in the linked list is at position 0
-  Node is defined as 
+  Node is defined as*/ 
   struct Node
   {
      int data;
      struct Node *next;
   }
-*/
+
 Node* InsertNth(Node* head, int data, int position)
 {
     Node *node = new Node;
@@ -21,7 +21,7 @@ Node* InsertNth(Node* head, int data, int position)
     }
     else {
         Node *last = head;
-        int p = 0;
+       // int p = 0;
 
         if (position == 0) {
             node -> next = head;
@@ -35,7 +35,7 @@ Node* InsertNth(Node* head, int data, int position)
             } else {
                 last = last -> next;
             }
-            p = p + 1;
+           // p = p + 1;
         }
         return head; 
     }
